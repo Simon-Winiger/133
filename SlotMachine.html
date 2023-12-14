@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine</title>
+    <style>
+        #AusgabeText {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./slotmachine.js" defer></script>
+    <h2> SlotMachine</h2>
+    <table>
+        <tr>
+            <td> <img id="imageOne" src="img/Harry_Maguire.jpeg" alt="Bild kann nicht angezeigt werden"> </td>
+            <td> <img id="imageTwo" src="img/Harry_Maguire.jpeg" alt="Bild kann nicht angezeigt werden"> </td>
+            <td> <img id="imageThree" src="img/Harry_Maguire.jpeg" alt="Bild kann nicht angezeigt werden"> </td>
+        </tr>
+    </table>
+    <button id="button" name="Start" style="width: 200px; height: 66px;">Start</button>
+    <p id="result"></p>
+    <div>
+        Balance: <span id="balance" class='red'>  </span> 
+    </div>
+    <div>
+        Wins: <span id="wins"> 0 </span> 
+    </div>
+    <div id="AusgabeText"> </div>
+</body>
+
+</html>
