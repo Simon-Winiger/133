@@ -22,10 +22,10 @@ selectLocation.addEventListener("change", function () {
     console.log("Ausgewähltes Element", selectedValue);
 
     // Request nur dürchführen, wenn das Element nicht "0 - Choose location ist"
-    // if (selectedValue < 1) return;
+     if (selectedValue < 1) return;
 
     
-    selectLocation.remove(0);
+    // selectLocation.remove(0);
 
 
     // API URL zusammensetzen: "https://gibm.becknet.ch/warenhaus/getFiliale.php?filiale=[value]"
